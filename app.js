@@ -59,6 +59,6 @@ app.get('/chodaapi', function (req, res) {
   }));
 });
 
-app.listen(3000, function () {
+app.listen(process.env.PORT || 8080 ,"0.0.0.0", function () {
   console.log('api가 켜짐');
 });
